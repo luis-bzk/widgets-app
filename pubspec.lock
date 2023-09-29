@@ -78,6 +78,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.3"
+  flutter_riverpod:
+    dependency: "direct main"
+    description:
+      name: flutter_riverpod
+      sha256: fcea39b84b666649280f6f678bc0bb479253bf865abc0387a8b11dac6477bf92
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -145,7 +153,7 @@ packages:
     source: hosted
     version: "1.8.3"
   riverpod:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: riverpod
       sha256: ff676bd8a715c7085692fe4919564f78fb90d33b10a1c5c14e740581857cc914
