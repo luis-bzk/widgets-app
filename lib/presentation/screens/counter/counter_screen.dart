@@ -30,11 +30,36 @@ class CounterScreen extends ConsumerWidget {
           'Valor: $clickCounter',
           style: Theme.of(context).textTheme.titleLarge,
         )),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            ref.read(counterProvider.notifier).state++;
-          },
-          child: const Icon(Icons.add),
+        floatingActionButton: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            FloatingActionButton(
+              onPressed: () {
+                ref.read(counterProvider.notifier).state++;
+              },
+              child: const Icon(Icons.add),
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            FloatingActionButton(
+              onPressed: () {
+                if (clickCounter == 0) return;
+
+                ref.read(counterProvider.notifier).state--;
+              },
+              child: const Icon(Icons.remove),
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            FloatingActionButton(
+              onPressed: () {
+                ref.read(counterProvider.notifier).state = 0;
+              },
+              child: const Icon(Icons.replay_rounded),
+            )
+          ],
         ));
   }
 }
