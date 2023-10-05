@@ -34,6 +34,7 @@ class CounterScreen extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             FloatingActionButton(
+              heroTag: "btn1",
               onPressed: () {
                 ref.read(counterProvider.notifier).state++;
               },
@@ -43,6 +44,7 @@ class CounterScreen extends ConsumerWidget {
               height: 16,
             ),
             FloatingActionButton(
+              heroTag: "btn2",
               onPressed: () {
                 if (clickCounter == 0) return;
 
@@ -54,6 +56,7 @@ class CounterScreen extends ConsumerWidget {
               height: 16,
             ),
             FloatingActionButton(
+              heroTag: "btn3",
               onPressed: () {
                 ref.read(counterProvider.notifier).state = 0;
               },
