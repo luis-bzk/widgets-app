@@ -16,17 +16,17 @@ final slides = <SlideInfo>[
       title: "Busca la comida",
       caption:
           "Ad tempor aute dolore exercitation. Velit exercitation consequat deserunt proident ipsum.",
-      imageUrl: "assets/images/1.png"),
+      imageUrl: "assets/Images/1.png"),
   SlideInfo(
       title: "Entrega rápida",
       caption:
           "Lorem voluptate exercitation aliquip in occaecat anim amet. Ex voluptate officia eu labore veniam excepteur dolor fugiat enim anim adipisicing anim.",
-      imageUrl: "assets/images/2.png"),
+      imageUrl: "assets/Images/2.png"),
   SlideInfo(
       title: "Disfruta la comida",
       caption:
           "Ullamco dolor elit magna cillum Lorem velit elit fugiat eiusmod in pariatur magna. Fugiat duis ipsum duis voluptate aute duis et reprehenderit pariatur dolore dolor.",
-      imageUrl: "assets/images/3.png"),
+      imageUrl: "assets/Images/3.png"),
 ];
 
 class AppTutorialScreen extends StatefulWidget {
