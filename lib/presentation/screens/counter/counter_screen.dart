@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:widgets_app/presentation/providers/providers.dart';
 
 class CounterScreen extends ConsumerWidget {
-  static const name = 'Counter Screen';
+  static const name = 'counter_screen';
   const CounterScreen({super.key});
 
   @override
@@ -34,6 +34,7 @@ class CounterScreen extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             FloatingActionButton(
+              heroTag: "btn1",
               onPressed: () {
                 ref.read(counterProvider.notifier).state++;
               },
@@ -43,6 +44,7 @@ class CounterScreen extends ConsumerWidget {
               height: 16,
             ),
             FloatingActionButton(
+              heroTag: "btn2",
               onPressed: () {
                 if (clickCounter == 0) return;
 
@@ -54,6 +56,7 @@ class CounterScreen extends ConsumerWidget {
               height: 16,
             ),
             FloatingActionButton(
+              heroTag: "btn3",
               onPressed: () {
                 ref.read(counterProvider.notifier).state = 0;
               },
